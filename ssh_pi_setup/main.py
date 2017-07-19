@@ -1,6 +1,8 @@
 import paramiko
 from paramiko import client
 
+#https://daanlenaerts.com/blog/2016/07/01/python-and-ssh-paramiko-shell/
+
 server = "192.168.4.151"
 user = "pi"
 password = "raspberry"

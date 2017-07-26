@@ -1,0 +1,69 @@
+[GENERAL]
+author = Keith T. Burgess
+name = NUP CFG
+version = v1.0
+
+[serial]
+default_port = /dev/ttyS0
+backup_port = /dev/ttyS1
+baudrate = 115200
+bytesize = 8
+stopbits = 1
+timeout = 60
+
+[SERIAL_PARALLEL]
+s_port1 = /dev/ttyS0, gbe-x
+s_port2 = /dev/ttyS1, gbe-y
+s_port3 = /dev/ttyS2, AMMS_04
+s_port4 = /dev/ttyS3, AMMS_05
+s_port5 = /dev/ttyS4, AMMS_07
+s_port6 = /dev/ttyS5, AMMS_08
+s_port7 = /dev/ttyS6, AMMS_12
+s_port8 = /dev/ttyS7, AMMS_15
+s_port9 = /dev/ttyS8, AMMS_16
+s_port10 = /dev/ttyS9, AMMS_19
+
+
+[logs]
+main = NUP-CFG.log
+
+[file]
+cmds = .cmds
+log = .log
+bin = u-boot.bin
+cmdsVersion = VERSION
+cmdVarFile = cmd_variables.data
+cmdVarFileDefault = VARIABLES
+log_switch = /log/log_switch.cmds
+log_sbc = /log/log_SBC.cmds
+
+
+[folder]
+loader = NUP_CFG_data/
+logs = logs/
+cfg = cfg/
+cmds = CMDS
+switch_cmds = /gbe/
+
+[Times]
+gbe-x =  00h: 12m: 00s
+gbe-y = 00h: 12m: 00s
+amms_04 = 00h: 08m: 00s 
+amms_05 = 00h: 08m: 00s
+amms_07 = 00h: 08m: 00s
+amms_08 = 00h: 08m: 00s
+amms_12 = 00h: 08m: 00s
+amms_15 = 00h: 08m: 00s
+amms_16 = 00h: 08m: 00s
+amms_19 = 00h: 08m: 00s
+
+log_gbe-x = 00h: 00m: 30s
+log_gbe-y = 00h: 00m: 30s
+log_amms_04 = 00h: 00m: 30s
+log_amms_05 = 00h: 00m: 30s
+log_amms_07 = 00h: 00m: 30s
+log_amms_08 = 00h: 00m: 30s
+log_amms_12 = 00h: 00m: 30s
+log_amms_15 = 00h: 00m: 30s
+log_amms_16 = 00h: 00m: 30s
+log_amms_19 = 00h: 00m: 30s
